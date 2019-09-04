@@ -9,7 +9,7 @@ const app=express();
 const server=http.createServer(app);
 const io=socketio.listen(server);
 //DB connection
-mongoose.connect('mongodb://localhost/chat-database')
+mongoose.connect('mongodb+srv://adann78:<guerrero78h>@cluster0-mauec.mongodb.net/test?retryWrites=true&w=majority')
 .then(db=>console.log('db is connected'))
 .catch(err=>console.log(err));
 
