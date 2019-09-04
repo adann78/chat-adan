@@ -41,7 +41,7 @@ io.on('connection', async socket=>{
                 cb('Error!, por favor ingresa mensaje');
             }
 
-        }else{
+        }else {
             var newMsg=new Chat({
                 msg,
                 nick: socket.nickname
