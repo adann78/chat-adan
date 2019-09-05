@@ -1,4 +1,4 @@
-const Chat=require('./models/Chat');
+const Chat=require('.src/models/Chat');
 module.exports=function(io){
     let users={};
 
