@@ -2,8 +2,8 @@ const mongoose=require('mongoose');
 const{ Schema }=mongoose;
 const ChatSchema=new Schema;
 new Schema({
-    nick: String,
-    msg: String,
+    nick: string,
+    msg: string,
     created_at:  {
         type: Date,
         default: Date.now
