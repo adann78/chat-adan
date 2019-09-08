@@ -2,12 +2,10 @@ const mongoose=require('mongoose');
 const{ Schema }=mongoose;
 const ChatSchema=new Schema;
 new Schema({
+    
     nick: String,
-    msg: String,
-    created_at:  {
-        type: Date,
-        default: Date.now
-    }
+    msg: String
 
+    
 });
 module.exports=mongoose.model('Chat',ChatSchema);
